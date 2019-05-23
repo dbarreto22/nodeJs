@@ -3,8 +3,8 @@
   "version": "0.0.0",
   "scripts": {
 
-      "start:dev": "nodemon API/server.js",
-      "postinstall": "nodemon API/server.js"
+      "start:dev": "nodemon /server.js",
+      "postinstall": "nodemon /server.js"
       
     
   },
