@@ -4,6 +4,8 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { PaginaPruebaComponent } from './pagina-prueba/pagina-prueba.component';
+import { ApiService } from './api.service';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -14,7 +16,13 @@ import { PaginaPruebaComponent } from './pagina-prueba/pagina-prueba.component';
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [],
-  bootstrap: [AppComponent]
+  providers: [
+    ApiService
+  ],
+  bootstrap: [AppComponent],
+  exports: [
+    HttpClientModule
+  ],
+
 })
 export class AppModule { }
